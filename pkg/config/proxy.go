@@ -104,6 +104,7 @@ type HealthCheckConf struct {
 	HealthCheckURL string `ini:"health_check_url" json:"health_check_url"`
 	// HealthCheckAddr specifies the address to connect to if the health check
 	// type is "tcp".
+
 	HealthCheckAddr string `ini:"-"`
 }
 
@@ -369,7 +370,7 @@ func (cfg *BaseProxyConf) decorate(prefix string, name string, section *ini.Sect
 		cfg.HealthCheckAddr = cfg.LocalIP + fmt.Sprintf(":%d", cfg.LocalPort)
 	}
 
-	if cfg.HealthCheckType == "http" && cfg.Plugin == "" && cfg.HealthCheckURL != "" {
+	if cfg.HealthCheckType == "http" && cfg.Plugin == "" && cfg.HealthCheckURL != "" && !strings.HasPrefix(cfg.HealthCheckURL, "http") {
 		s := fmt.Sprintf("http://%s:%d", cfg.LocalIP, cfg.LocalPort)
 		if !strings.HasPrefix(cfg.HealthCheckURL, "/") {
 			s += "/"
