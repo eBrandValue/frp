@@ -1,4 +1,4 @@
-module github.com/fatedier/frp
+module github.com/eBrandValue/frp
 
 go 1.16
 

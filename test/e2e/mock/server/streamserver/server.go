@@ -7,8 +7,8 @@ import (
 	"net"
 	"strconv"
 
-	libnet "github.com/fatedier/frp/pkg/util/net"
-	"github.com/fatedier/frp/test/e2e/pkg/rpc"
+	libnet "github.com/eBrandValue/frp/pkg/util/net"
+	"github.com/eBrandValue/frp/test/e2e/pkg/rpc"
 )
 
 type Type string

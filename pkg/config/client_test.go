@@ -17,8 +17,8 @@ package config
 import (
 	"testing"
 
-	"github.com/fatedier/frp/pkg/auth"
-	"github.com/fatedier/frp/pkg/consts"
+	"github.com/eBrandValue/frp/pkg/auth"
+	"github.com/eBrandValue/frp/pkg/consts"
 
 	"github.com/stretchr/testify/assert"
 )

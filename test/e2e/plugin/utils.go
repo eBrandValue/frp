@@ -6,9 +6,9 @@ import (
 	"io"
 	"net/http"
 
-	plugin "github.com/fatedier/frp/pkg/plugin/server"
-	"github.com/fatedier/frp/pkg/util/log"
-	"github.com/fatedier/frp/test/e2e/mock/server/httpserver"
+	plugin "github.com/eBrandValue/frp/pkg/plugin/server"
+	"github.com/eBrandValue/frp/pkg/util/log"
+	"github.com/eBrandValue/frp/test/e2e/mock/server/httpserver"
 )
 
 type PluginHandler func(req *plugin.Request) *plugin.Response

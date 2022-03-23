@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/fatedier/frp/pkg/consts"
+	"github.com/eBrandValue/frp/pkg/consts"
 
 	"gopkg.in/ini.v1"
 )

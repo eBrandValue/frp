@@ -5,10 +5,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fatedier/frp/pkg/util/log"
-	"github.com/fatedier/frp/test/e2e/framework"
-	"github.com/fatedier/frp/test/e2e/framework/consts"
-	"github.com/fatedier/frp/test/e2e/pkg/request"
+	"github.com/eBrandValue/frp/pkg/util/log"
+	"github.com/eBrandValue/frp/test/e2e/framework"
+	"github.com/eBrandValue/frp/test/e2e/framework/consts"
+	"github.com/eBrandValue/frp/test/e2e/pkg/request"
 
 	. "github.com/onsi/ginkgo"
 )
